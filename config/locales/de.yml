@@ -1,0 +1,27 @@
+de:
+  activerecord:
+    models:
+      raport/report: 
+        one: Bericht
+        other: Berichte
+    attributes:
+      raport/report:
+        name: Name
+        state: Status
+        file: Datei
+        user_id: Besitzer
+        created_at: angelegt
+    state_machines:
+      states:
+        active: aktiv
+        pending: wartend
+        finished: fertig
+        failed: gescheitert
+      events:
+        pend: Starten
+        activate: Aktivieren
+        finish: Beenden
+        flop: Abbrechen
+  time:
+    formats:
+      dashed: "%d-%m-%Y-%H-%M-%S"
