@@ -6,7 +6,7 @@ require "raport/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "raport"
-  s.version     = Raport::VERSION
+  s.version     = Raport.version
   s.authors     = ["Michael Rüffer", "Dominic Breuker"]
   s.email       = ["michael.rueffer@hitfoxgroup.com", "dominic.breuker@hitfoxgroup.com"]
   s.homepage    = "https://forderungsdienstleister.com"

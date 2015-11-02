@@ -1,3 +1,7 @@
+require_relative 'gem_version'
+
 module Raport
-  VERSION = "0.0.1"
+  def self.version
+    gem_version
+  end
 end
