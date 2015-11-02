@@ -15,15 +15,18 @@ Gem::Specification.new do |gem|
   gem.license     = "MIT"
 
   gem.files = Dir["{app,config,db,lib}/**/*", "{lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
-  gem.test_files = Dir["test/**/*"]
+  gem.test_files = Dir["spec/**/*"]
 
   gem.add_dependency "rails", "~> 4.2.3"
   gem.add_dependency "railties", "~> 4.2.3"
   gem.add_dependency "carrierwave", "~> 0.10"
   gem.add_dependency "state_machines-activerecord", "~> 0.2.0"
-  gem.add_dependency "inherited_resources", "~>1.6.0"
-  gem.add_dependency "config", "~>1.0.0"
-  gem.add_dependency "delayed_job_active_record", "~>4.0.3"
+  gem.add_dependency "inherited_resources", "~> 1.6.0"
+  gem.add_dependency "delayed_job_active_record", "~> 4.0.3"
 
   gem.add_development_dependency "pg"
+  gem.add_development_dependency "rspec"
+  gem.add_development_dependency "rspec-rails"
+  gem.add_development_dependency "rspec-activejob"
+  gem.add_development_dependency 'factory_girl_rails'
 end
