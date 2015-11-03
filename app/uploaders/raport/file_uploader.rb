@@ -20,6 +20,12 @@ module Raport
         file.instance_variable_set(:@content_type, new_content_type)
       end
     end
+    
+    # process :set_file_size
+    #
+    # def set_file_size
+    #   model.file_size = file.size
+    # end
 
     def filename
       model.respond_to?(:filename) ? model.filename : super

@@ -10,6 +10,7 @@ de:
         state: Status
         file: Datei
         user_id: Besitzer
+        file_size: Dateigröße
         created_at: angelegt
     state_machines:
       states:
