@@ -155,7 +155,15 @@ module Raport
     #
     #
     #
-
+    
+    def downloadable?
+      finished? || failed? && file?
+    end
+    
+    def working?
+      pending? || active?
+    end
+    
     def perform!
       ReportJob.new(id).perform
     end
