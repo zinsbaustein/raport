@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    raport (0.1.6.pre)
+    raport (0.1.7.pre)
       carrierwave (~> 0.10)
       delayed_job_active_record (~> 4.0.3)
       inherited_resources (~> 1.6.0)
