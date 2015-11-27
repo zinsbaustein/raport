@@ -3,10 +3,10 @@
 Raport beta
 ===========
 
-[![Build Status](https://img.shields.io/travis/HitFox/raport.svg?style=flat-square)](https://travis-ci.org/HitFox/cm-sms-rails)
-[![Gem](https://img.shields.io/gem/dt/raport.svg?style=flat-square)](https://rubygems.org/gems/cm-sms-rails)
-[![Code Climate](https://img.shields.io/codeclimate/github/HitFox/raport.svg?style=flat-square)](https://codeclimate.com/github/HitFox/cm-sms-rails)
-[![Coverage](https://img.shields.io/coveralls/HitFox/raport.svg?style=flat-square)](https://coveralls.io/github/HitFox/cm-sms-rails)
+[![Build Status](https://img.shields.io/travis/HitFox/raport.svg?style=flat-square)](https://travis-ci.org/HitFox/raport)
+[![Gem](https://img.shields.io/gem/dt/raport.svg?style=flat-square)](https://rubygems.org/gems/raport)
+[![Code Climate](https://img.shields.io/codeclimate/github/HitFox/raport.svg?style=flat-square)](https://codeclimate.com/github/HitFox/raport)
+[![Coverage](https://img.shields.io/coveralls/HitFox/raport.svg?style=flat-square)](https://coveralls.io/github/HitFox/raport)
 
 Description
 -----------
