@@ -1,41 +1,57 @@
-# Raport
+![alt text](http://www.hitfoxgroup.com/downloads/hitfox_logo_with_tag_two_colors_WEB.png "Logo Hitfox Group")
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cm/sms`. To experiment with that code, run `bin/console` for an interactive prompt.
+Raport
+==============
 
-TODO: Delete this and the text above, and describe your gem
+[![Build Status](https://img.shields.io/travis/HitFox/raport.svg?style=flat-square)](https://travis-ci.org/HitFox/cm-sms-rails)
+[![Gem](https://img.shields.io/gem/dt/raport.svg?style=flat-square)](https://rubygems.org/gems/cm-sms-rails)
+[![Code Climate](https://img.shields.io/codeclimate/github/HitFox/raport.svg?style=flat-square)](https://codeclimate.com/github/HitFox/cm-sms-rails)
+[![Coverage](https://img.shields.io/coveralls/HitFox/raport.svg?style=flat-square)](https://coveralls.io/github/HitFox/cm-sms-rails)
 
-## Installation
+Description
+-----------
 
-Add this line to your application's Gemfile:
+Create large data reports within your rails app, without influencing the performance of the app server.
+​
+Usage
+------------
 
+
+Installation
+------------
+
+If you user bundler, then just add 
 ```ruby
-gem 'raport'
+$ gem 'raport'
+```
+to your Gemfile and execute
+```
+$ bundle install
+```
+or without bundler
+```
+$ gem install raport
 ```
 
-And then execute:
+Upgrade
+-------
+```
+$ bundle update raport
+```
+or without bundler
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install raport
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+$ gem update raport
+```
+​
+Changelog
+---------
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/raport. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/HitFox/raport. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
