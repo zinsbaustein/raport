@@ -1,7 +1,7 @@
 ![alt text](http://www.hitfoxgroup.com/downloads/hitfox_logo_with_tag_two_colors_WEB.png "Logo Hitfox Group")
 
-Raport
-==============
+Raport beta
+===========
 
 [![Build Status](https://img.shields.io/travis/HitFox/raport.svg?style=flat-square)](https://travis-ci.org/HitFox/cm-sms-rails)
 [![Gem](https://img.shields.io/gem/dt/raport.svg?style=flat-square)](https://rubygems.org/gems/cm-sms-rails)
@@ -31,6 +31,12 @@ $ bundle install
 or without bundler
 ```
 $ gem install raport
+```
+
+After intalling the gem, please run the config generator:
+
+```
+$ rails generate raport:config
 ```
 
 Upgrade
