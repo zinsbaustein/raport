@@ -22,7 +22,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "carrierwave", "~> 0.10"
   gem.add_dependency "state_machines-activerecord", "~> 0.3"
   gem.add_dependency "inherited_resources", "~> 1.6.0"
-  gem.add_dependency "delayed_job_active_record", "~> 4.0.3"
+  gem.add_dependency "delayed_job_active_record", "~> 4.1"
 
   gem.add_development_dependency "pg"
   gem.add_development_dependency "rspec"
