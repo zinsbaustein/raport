@@ -17,10 +17,11 @@ Gem::Specification.new do |gem|
   gem.files = Dir["{app,config,db,lib}/**/*", "{lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   gem.test_files = Dir["spec/**/*"]
 
-  gem.add_dependency "rails", "~> 4.2.3"
-  gem.add_dependency "railties", "~> 4.2.3"
+  gem.add_dependency "rails", "~> 4.2"
+  gem.add_dependency "railties", "~> 4.2"
   gem.add_dependency "carrierwave", "~> 0.10"
   gem.add_dependency "state_machines-activerecord", "~> 0.3"
+  gem.add_dependency "responders", "2.1.0"
   gem.add_dependency "inherited_resources", "~> 1.6.0"
   gem.add_dependency "delayed_job_active_record", "~> 4.1"
 
