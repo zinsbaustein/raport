@@ -185,9 +185,11 @@ module Raport
         query = select.present? ? resource_class.select(*select) : resource_class
         query = query.joins(*joins) if joins.any?
         query = query.where(where) if where.present?
-        query.uniq
+        query.select("DISTINCT ON (#{resource_class.table_name}.id) #{resource_class.table_name}.*")
       end
     end
+
+    "DISTINCT ON (profiles.id) profiles.*"
 
     def resource_class
       @resource_class ||= resource_class_name.constantize
