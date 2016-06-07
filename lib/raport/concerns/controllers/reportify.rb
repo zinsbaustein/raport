@@ -36,7 +36,7 @@ module Raport
         action_name: action_name,
         select: collection.select_values,
         joins: collection.joins_values,
-        where: formatted_sql_values(collection.where_values),
+        where: collection.where_values_hash,
         resource_class_name: resource_class.name, 
         template: current_template, 
         locale: I18n.locale
@@ -44,10 +44,6 @@ module Raport
     end
   
     private
-
-    def formatted_sql_values(values)
-      values.kind_of?(Array) ? values.map { |value| value.respond_to?(:to_sql) ? value.to_sql : value }.join(' AND ') : nil
-    end
   
     def current_template
       lookup_context.find(action_name, lookup_context.prefixes, false, [], formats: [request.format.to_sym]).inspect

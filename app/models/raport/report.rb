@@ -18,6 +18,8 @@ module Raport
     #
 
     store :query, accessors: [:joins, :where, :select]
+    
+    serialize :where, Hash
 
     #
     # Plugins
@@ -188,8 +190,6 @@ module Raport
         query.select("DISTINCT ON (#{resource_class.table_name}.id) #{resource_class.table_name}.*")
       end
     end
-
-    "DISTINCT ON (profiles.id) profiles.*"
 
     def resource_class
       @resource_class ||= resource_class_name.constantize
