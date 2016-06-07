@@ -19,6 +19,12 @@ require 'rspec/core/rake_task'
 
 desc "Run all specs in spec directory (excluding plugin specs)"
 
-RSpec::Core::RakeTask.new(spec:  'app:db:test:prepare')
+namespace "spec" do
+  desc "Set up databases for integration testing"
+  task "setup" do
+    puts "Setting up databases"
+    run_in_dummy_app "RAILS_ENV=test rake db:schema:load"
+  end
+end
 
 task default: :spec
