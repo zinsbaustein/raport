@@ -19,7 +19,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "rails", "~> 4.2"
   gem.add_dependency "railties", "~> 4.2"
-  gem.add_dependency "carrierwave", "=> 0.10"
+  gem.add_dependency "carrierwave", ">= 0.10"
   gem.add_dependency "state_machines-activerecord", "~> 0.3"
   gem.add_dependency "responders", "2.1.0"
   gem.add_dependency "inherited_resources", "~> 1.6.0"
