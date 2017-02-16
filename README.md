@@ -22,7 +22,7 @@ Installation
 
 If you user bundler, then just add 
 ```ruby
-$ gem 'raport'
+gem 'raport'
 ```
 to your Gemfile and execute
 ```
