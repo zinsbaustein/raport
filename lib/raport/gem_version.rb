@@ -6,7 +6,7 @@ module Raport
   module VERSION
     MAJOR = 0
     MINOR = 1
-    TINY  = 15
+    TINY  = 16
     PRE   = 'pre'
 
     STRING = [MAJOR, MINOR, TINY, PRE].compact.join(".")
