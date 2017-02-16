@@ -8,8 +8,8 @@ require 'rubygems'
 require 'bundler/setup'
 require 'rspec'
 require 'rspec/autorun'
-# require "rails/all"
-# require 'rspec/rails'
+require "rails/all"
+require 'rspec/rails'
 # require 'rspec/active_job'
 # require 'factory_girl_rails'
 require 'simplecov'
@@ -19,8 +19,6 @@ Bundler.setup
 
 require 'carrierwave'
 require 'state_machines-activerecord'
-require 'inherited_resources'
-require 'delayed_job_active_record'
 
 Rails.backtrace_cleaner.remove_silencers!
 # Load support files

@@ -1,9 +1,6 @@
 module Raport
   module Reportify
     extend ActiveSupport::Concern
-    
-    # TODO move this to configuration
-    REPORTABLE_FORMATS  = [:csv]
   
     included do
       helper_method :report_attributes
@@ -12,15 +9,20 @@ module Raport
       
       report only: :index
     end
+    
+    def current_report_owner
+      current_user
+    end
   
     def create_report
-      if REPORTABLE_FORMATS.include?(request.format.to_sym)
-        @report = current_admin.reports.create(report_attributes)
+      if Raport.config.formats.include?(request.format.to_sym)
+        @report = current_report_owner.reports.create(report_attributes)
 
         respond_to do |format|
           format.any do 
             if request.xhr?
-              render json: @report.errors.empty? ? @report.as_json(methods: :permalink) : { errors: @report.errors }.to_json
+              json = @report.errors.empty? ? @report.as_json(methods: :permalink) : { errors: @report.errors }.to_json
+              render json: json
             else
               redirect_to polymorphic_path([current_namespace, @report])
             end
