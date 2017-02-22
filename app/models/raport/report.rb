@@ -108,7 +108,7 @@ module Raport
     #
     #
 
-    belongs_to :user, polymorphic: true, class_name: ::Admin
+    belongs_to :user, polymorphic: true
 
     #
     # Nested Attributes
