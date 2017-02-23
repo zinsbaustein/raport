@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    raport (0.2.2)
+    raport (0.2.3)
       carrierwave (~> 0.3)
       rails (~> 5.0)
       railties (~> 5.0)
