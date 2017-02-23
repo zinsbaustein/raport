@@ -3,8 +3,6 @@ module Raport
     extend ActiveSupport::Concern
   
     included do
-      helper_method :report_attributes
-      
       respond_to *REPORTABLE_FORMATS, :html
       
       report only: :index
