@@ -3,7 +3,7 @@ module Raport
     extend ActiveSupport::Concern
   
     included do
-      respond_to *REPORTABLE_FORMATS, :html
+      respond_to *Raport.config.formats, :html
       
       report only: :index
     end
