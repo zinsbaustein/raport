@@ -26,19 +26,8 @@ module Raport
           report.activate
           report.file = tmpfile
           report.finish
-          
-          
-          Rails.logger.info '#######################################'
-          Rails.logger.info report.inspect
-          Rails.logger.info '#######################################'
-          
         rescue => e
-          
-          Rails.logger.info '#######################################'
-          Rails.logger.info e.message
-          Rails.logger.info '#######################################'
-          
-          report.last_error = [e.message, e.backtrace.join("\n")].join("\n")
+          # report.last_error = [e.message, e.backtrace.join("\n")].join("\n")
           report.flop
           raise
         ensure
