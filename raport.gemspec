@@ -21,7 +21,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "rails", "~> 4.2"
   gem.add_dependency "railties", "~> 4.2"
   gem.add_dependency "carrierwave", "~> 0.3"
-  gem.add_dependency "state_machines-activerecord", "~> 0.4"
+  gem.add_dependency "state_machines-activerecord", "~> 0.3"
 
   gem.add_development_dependency "pg"
   gem.add_development_dependency "rspec"
