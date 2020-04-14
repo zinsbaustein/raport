@@ -18,10 +18,10 @@ Gem::Specification.new do |gem|
   gem.test_files = Dir["spec/**/*"]
   
   gem.required_ruby_version = '~> 2.3'
-  gem.add_dependency "rails", "~> 5.0"
-  gem.add_dependency "railties", "~> 5.0"
+  gem.add_dependency "rails", ">= 5.0"
+  gem.add_dependency "railties", ">= 5.0"
   gem.add_dependency "carrierwave", ">= 0.3"
-  gem.add_dependency "state_machines-activerecord", "~> 0.4"
+  gem.add_dependency "state_machines-activerecord", ">= 0.4"
 
   gem.add_development_dependency "pg"
   gem.add_development_dependency "rspec"
