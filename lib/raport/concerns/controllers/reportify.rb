@@ -46,7 +46,7 @@ module Raport
     private
   
     def current_template
-      lookup_context.find(action_name, lookup_context.prefixes, false, [], formats: [request.format.to_sym]).inspect
+      lookup_context.find(action_name, lookup_context.prefixes, false, [], formats: [request.format.to_sym]).short_identifier
     end
   
     class_methods do
