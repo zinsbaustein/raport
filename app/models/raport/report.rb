@@ -201,7 +201,7 @@ module Raport
 
     def filename
       encoding_options = { invalid: :replace, undef: :replace, replace: '', universal_newline: true }
-      @filename ||= [name || default_filename, format].join('.').gsub('.csv.csv', '.csv').encode(Encoding.find('ASCII'), encoding_options)
+      @filename ||= [name || default_filename, format].join('.').gsub('.csv.csv', '.csv').encode(Encoding.find('ASCII'), **encoding_options)
     end
 
     def tmp_filename
