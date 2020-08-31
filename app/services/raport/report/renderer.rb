@@ -1,6 +1,9 @@
 module Raport
   class Report
     class Renderer
+      class Controller < ActionController::Base
+        include ApplicationHelper
+      end
       
       attr_accessor :report
       
@@ -8,12 +11,7 @@ module Raport
       
       def initialize(report)
         @report = report
-        @view ||= begin
-          view = ActionView::Base.new
-          view.view_paths = ActionController::Base.view_paths
-          view.extend ApplicationHelper
-          view
-        end
+        @view = Controller.renderer
         @tmpfile ||= begin
           tmpfile = Tempfile.new(report.tmp_filename)
           tmpfile.write(render_view)
